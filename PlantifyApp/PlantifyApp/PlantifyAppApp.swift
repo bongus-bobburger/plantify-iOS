@@ -11,7 +11,9 @@ import SwiftUI
 struct PlantifyAppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView {
+                SignInView()
+            }
         }
     }
 }

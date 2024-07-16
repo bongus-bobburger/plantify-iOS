@@ -13,6 +13,14 @@
 		425F6EFC2C46879D005D7A2F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 425F6EFB2C46879D005D7A2F /* Preview Assets.xcassets */; };
 		425F6F062C4687D3005D7A2F /* ExampleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425F6F052C4687D3005D7A2F /* ExampleViewModel.swift */; };
 		425F6F082C4687DA005D7A2F /* ExampleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425F6F072C4687DA005D7A2F /* ExampleModel.swift */; };
+		425F6F0B2C468881005D7A2F /* ColorExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425F6F0A2C468881005D7A2F /* ColorExt.swift */; };
+		425F6F0D2C46893F005D7A2F /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425F6F0C2C46893F005D7A2F /* SignInView.swift */; };
+		425F6F102C4689FC005D7A2F /* InputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425F6F0F2C4689FC005D7A2F /* InputField.swift */; };
+		425F6F122C468B26005D7A2F /* SignInModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425F6F112C468B26005D7A2F /* SignInModel.swift */; };
+		425F6F142C468B41005D7A2F /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425F6F132C468B41005D7A2F /* SignInViewModel.swift */; };
+		425F6F162C468E33005D7A2F /* SignUpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425F6F152C468E33005D7A2F /* SignUpModel.swift */; };
+		425F6F182C468E52005D7A2F /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425F6F172C468E52005D7A2F /* SignUpViewModel.swift */; };
+		425F6F1A2C468E6A005D7A2F /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425F6F192C468E6A005D7A2F /* SignUpView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +31,14 @@
 		425F6EFB2C46879D005D7A2F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		425F6F052C4687D3005D7A2F /* ExampleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleViewModel.swift; sourceTree = "<group>"; };
 		425F6F072C4687DA005D7A2F /* ExampleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleModel.swift; sourceTree = "<group>"; };
+		425F6F0A2C468881005D7A2F /* ColorExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExt.swift; sourceTree = "<group>"; };
+		425F6F0C2C46893F005D7A2F /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		425F6F0F2C4689FC005D7A2F /* InputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputField.swift; sourceTree = "<group>"; };
+		425F6F112C468B26005D7A2F /* SignInModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInModel.swift; sourceTree = "<group>"; };
+		425F6F132C468B41005D7A2F /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		425F6F152C468E33005D7A2F /* SignUpModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpModel.swift; sourceTree = "<group>"; };
+		425F6F172C468E52005D7A2F /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		425F6F192C468E6A005D7A2F /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +73,10 @@
 			children = (
 				425F6EF42C46879C005D7A2F /* PlantifyAppApp.swift */,
 				425F6F042C4687BE005D7A2F /* View */,
+				425F6F0E2C4689E9005D7A2F /* Components */,
 				425F6F032C4687B9005D7A2F /* ViewModel */,
 				425F6F022C4687B3005D7A2F /* Model */,
+				425F6F092C468878005D7A2F /* Ext */,
 				425F6EF82C46879D005D7A2F /* Assets.xcassets */,
 				425F6EFA2C46879D005D7A2F /* Preview Content */,
 			);
@@ -77,6 +95,8 @@
 			isa = PBXGroup;
 			children = (
 				425F6F072C4687DA005D7A2F /* ExampleModel.swift */,
+				425F6F112C468B26005D7A2F /* SignInModel.swift */,
+				425F6F152C468E33005D7A2F /* SignUpModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -85,6 +105,8 @@
 			isa = PBXGroup;
 			children = (
 				425F6F052C4687D3005D7A2F /* ExampleViewModel.swift */,
+				425F6F132C468B41005D7A2F /* SignInViewModel.swift */,
+				425F6F172C468E52005D7A2F /* SignUpViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -93,8 +115,26 @@
 			isa = PBXGroup;
 			children = (
 				425F6EF62C46879C005D7A2F /* ContentView.swift */,
+				425F6F0C2C46893F005D7A2F /* SignInView.swift */,
+				425F6F192C468E6A005D7A2F /* SignUpView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		425F6F092C468878005D7A2F /* Ext */ = {
+			isa = PBXGroup;
+			children = (
+				425F6F0A2C468881005D7A2F /* ColorExt.swift */,
+			);
+			path = Ext;
+			sourceTree = "<group>";
+		};
+		425F6F0E2C4689E9005D7A2F /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				425F6F0F2C4689FC005D7A2F /* InputField.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,9 +207,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				425F6F0D2C46893F005D7A2F /* SignInView.swift in Sources */,
 				425F6EF72C46879C005D7A2F /* ContentView.swift in Sources */,
+				425F6F0B2C468881005D7A2F /* ColorExt.swift in Sources */,
+				425F6F102C4689FC005D7A2F /* InputField.swift in Sources */,
+				425F6F1A2C468E6A005D7A2F /* SignUpView.swift in Sources */,
 				425F6F062C4687D3005D7A2F /* ExampleViewModel.swift in Sources */,
+				425F6F142C468B41005D7A2F /* SignInViewModel.swift in Sources */,
+				425F6F122C468B26005D7A2F /* SignInModel.swift in Sources */,
+				425F6F162C468E33005D7A2F /* SignUpModel.swift in Sources */,
 				425F6F082C4687DA005D7A2F /* ExampleModel.swift in Sources */,
+				425F6F182C468E52005D7A2F /* SignUpViewModel.swift in Sources */,
 				425F6EF52C46879C005D7A2F /* PlantifyAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -309,8 +357,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -337,8 +386,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
