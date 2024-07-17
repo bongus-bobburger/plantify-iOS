@@ -22,6 +22,7 @@ struct InputField: View {
             .tint(Color.baseGreen)
             .focused($focus)
             .foregroundStyle(.white)
+            .textInputAutocapitalization(.never)
             
             Rectangle()
                 .frame(height: 1)

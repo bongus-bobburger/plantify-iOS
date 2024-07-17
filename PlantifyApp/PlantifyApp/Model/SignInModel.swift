@@ -8,6 +8,13 @@
 import Foundation
 
 struct SignInModel: Codable {
-    var id: String = ""
-    var pw: String = ""
+    var email: String = ""
+    var password: String = ""
+    
+    var params: [String: Any] {
+        return [
+            "email": email,
+            "password": password
+        ]
+    }
 }

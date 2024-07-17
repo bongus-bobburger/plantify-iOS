@@ -31,12 +31,12 @@ struct SignInView: View {
                 .multilineTextAlignment(.center)
                 .padding(.vertical, 40)
             
-            InputField(content: $viewModel.model.id, prompt: "아이디를 입력해주세요", focus: _isId)
-            InputField(content: $viewModel.model.pw, prompt: "비밀번호를 입력해주세요", focus: _isPw)
+            InputField(content: $viewModel.model.email, prompt: "이메일을 입력해주세요", focus: _isId)
+            InputField(content: $viewModel.model.password, prompt: "비밀번호를 입력해주세요", focus: _isPw)
             
             VStack(spacing: 10) {
                 Button {
-                    
+                    viewModel.signin()
                 } label: {
                     RoundedRectangle(cornerRadius: 30)
                         .frame(width: 300, height: 50)

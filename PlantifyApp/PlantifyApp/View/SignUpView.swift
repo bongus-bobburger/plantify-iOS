@@ -34,12 +34,12 @@ struct SignUpView: View {
                 .multilineTextAlignment(.center)
                 .padding(.vertical, 40)
             
-            InputField(content: $viewModel.model.id, prompt: "아이디를 입력해주세요", focus: _isId)
-            InputField(content: $viewModel.model.pw, prompt: "비밀번호를 입력해주세요", focus: _isPw)
+            InputField(content: $viewModel.model.email, prompt: "아이디를 입력해주세요", focus: _isId)
+            InputField(content: $viewModel.model.password, prompt: "비밀번호를 입력해주세요", focus: _isPw)
             InputField(content: $viewModel.model.name, prompt: "닉네임을 입력해주세요", focus: _isName)
             
             Button {
-                
+                viewModel.signUp()
             } label: {
                 RoundedRectangle(cornerRadius: 30)
                     .frame(width: 300, height: 50)

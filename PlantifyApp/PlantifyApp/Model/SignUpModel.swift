@@ -8,7 +8,15 @@
 import Foundation
 
 struct SignUpModel {
-    var id: String = ""
-    var pw: String = ""
+    var email: String = ""
+    var password: String = ""
     var name: String = ""
+    
+    var params: [String: Any] {
+        return [
+            "email": email,
+            "password": password,
+            "name": name
+        ]
+    }
 }
