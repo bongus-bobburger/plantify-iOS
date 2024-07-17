@@ -41,7 +41,6 @@ struct ImagePickerBox: View {
                                             .foregroundStyle(.yellow)
                                             .font(.system(size: 15))
                                     }
-                                    .offset(x: 10, y: -10)
                             }
                         }
                         

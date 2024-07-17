@@ -12,7 +12,7 @@ struct PlantifyAppApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationView {
-                MainView()
+                HomeView()
             }
         }
     }

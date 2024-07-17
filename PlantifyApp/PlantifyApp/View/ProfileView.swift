@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ProfileView: View {
+    @Environment(\.presentationMode) var presentationMode
+    
     var body: some View {
         ZStack {
             VStack {
@@ -68,9 +70,21 @@ struct ProfileView: View {
                 Spacer()
             }
         }
+        .toolbar {
+            ToolbarItem(placement: .topBarLeading) {
+                Button {
+                    self.presentationMode.wrappedValue.dismiss()
+                } label: {
+                    Image(systemName: "chevron.left")
+                        .foregroundStyle(Color.baseGreen)
+                }
+            }
+        }
     }
 }
 
 #Preview {
-    ProfileView()
+    NavigationView {
+        ProfileView()
+    }
 }

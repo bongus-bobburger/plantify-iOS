@@ -15,10 +15,7 @@ struct PostingView: View {
     
     var body: some View {
         VStack(spacing: 50) {
-            Spacer()
-                .frame(height: 20)
-            
-            ImagePickerBox(width:300, height: 200)
+            ImagePickerBox(width: 300, height: 200)
             
             InputField(content: .constant(""), prompt: "제목을 입력해주세요.", focus: _isTitle)
             InputField(content: .constant(""), prompt: "내용을 입력해주세요.", focus: _isContent)
