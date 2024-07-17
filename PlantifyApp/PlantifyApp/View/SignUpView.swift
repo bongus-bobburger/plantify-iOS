@@ -41,7 +41,7 @@ struct SignUpView: View {
             Button {
                 
             } label: {
-                RoundedRectangle(cornerRadius: 10)
+                RoundedRectangle(cornerRadius: 30)
                     .frame(width: 300, height: 50)
                     .foregroundStyle(Color.baseGreen)
                     .overlay {
