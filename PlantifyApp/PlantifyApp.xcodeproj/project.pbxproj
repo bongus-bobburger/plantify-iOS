@@ -33,6 +33,7 @@
 		425F6F302C475DC4005D7A2F /* PostingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425F6F2F2C475DC4005D7A2F /* PostingView.swift */; };
 		425F6F332C475DEE005D7A2F /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425F6F322C475DEE005D7A2F /* ImagePicker.swift */; };
 		425F6F352C475F03005D7A2F /* ImagePickerBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425F6F342C475F03005D7A2F /* ImagePickerBox.swift */; };
+		425F6F372C47653E005D7A2F /* MyPlantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425F6F362C47653E005D7A2F /* MyPlantCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +64,7 @@
 		425F6F2F2C475DC4005D7A2F /* PostingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostingView.swift; sourceTree = "<group>"; };
 		425F6F322C475DEE005D7A2F /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		425F6F342C475F03005D7A2F /* ImagePickerBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerBox.swift; sourceTree = "<group>"; };
+		425F6F362C47653E005D7A2F /* MyPlantCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlantCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +171,7 @@
 				425F6F292C474A5B005D7A2F /* PostCell.swift */,
 				425F6F2D2C4754F6005D7A2F /* CommentCell.swift */,
 				425F6F342C475F03005D7A2F /* ImagePickerBox.swift */,
+				425F6F362C47653E005D7A2F /* MyPlantCell.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 				425F6F142C468B41005D7A2F /* SignInViewModel.swift in Sources */,
 				425F6F222C46918A005D7A2F /* ProfileView.swift in Sources */,
 				425F6F282C46922E005D7A2F /* HomeView.swift in Sources */,
+				425F6F372C47653E005D7A2F /* MyPlantCell.swift in Sources */,
 				425F6F202C469183005D7A2F /* DictView.swift in Sources */,
 				425F6F122C468B26005D7A2F /* SignInModel.swift in Sources */,
 				425F6F332C475DEE005D7A2F /* ImagePicker.swift in Sources */,
