@@ -21,6 +21,7 @@ struct MyPlantCell: View {
                             .clipShape(RoundedRectangle(cornerRadius: 10))
                     } placeholder: {
                         ProgressView()
+                            .frame(width: 150, height: 100)
                     }
                     .frame(height: 100)
             }

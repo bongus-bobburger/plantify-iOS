@@ -1,31 +1,37 @@
 //
-//  ImagePickerBox.swift
+//  MarketPostingView.swift
 //  PlantifyApp
 //
-//  Created by hyk on 7/17/24.
+//  Created by hyk on 7/18/24.
 //
 
 import SwiftUI
 
-struct ImagePickerBox: View {
+struct MarketPostingView: View {
     
-    let width: CGFloat
-    let height: CGFloat
+    @Environment(\.presentationMode) var presentationMode
+    
+    @FocusState var isName: Bool
+    @FocusState var isDes: Bool
+    @FocusState var isPrice: Bool
     
     @State private var showImagePicker = false
     @State var selectedUIImage: UIImage?
     
-    @EnvironmentObject var viewModel: PostingViewModel
-        
+    @StateObject var viewModel = PriceViewModel()
+    
     var body: some View {
-        VStack {
+        VStack(spacing: 30) {
+            Spacer()
+                .frame(height: 10)
+            
             if let image = selectedUIImage {
                 ZStack {
                     Image(uiImage: image)
                         .resizable()
                         .scaledToFit()
                         .clipShape(RoundedRectangle(cornerRadius: 10))
-                        .frame(width: width, height: height)
+                        .frame(width: 300, height: 200)
                     
                     VStack {
                         HStack {
@@ -50,14 +56,14 @@ struct ImagePickerBox: View {
                         
                         Spacer()
                     }
-                    .frame(width: width, height: height)
+                    .frame(width: 300, height: 200)
                 }
             } else {
                 Button {
                     showImagePicker.toggle()
                 } label: {
                     RoundedRectangle(cornerRadius: 10)
-                        .frame(width: width, height: height)
+                        .frame(width: 300, height: 200)
                         .foregroundColor(.clear)
                         .overlay {
                             RoundedRectangle(cornerRadius: 10).stroke(Color.baseGreen, lineWidth: 2)
@@ -73,6 +79,47 @@ struct ImagePickerBox: View {
                     ImagePicker(image: $selectedUIImage)
                 }
             }
+            
+            InputField(content: $viewModel.priceModel.name, prompt: "상품 이름을 입력해주세요.", focus: _isName)
+            
+            InputField(content: $viewModel.priceModel.description, prompt: "상품 설명을 입력해주세요.", focus: _isDes)
+            
+            InputField(content: $viewModel.priceModel.price, prompt: "가격을 입력해주세요.", focus: _isPrice)
+            
+            Spacer()
         }
+        .navigationBarBackButtonHidden()
+        .toolbar {
+            ToolbarItem(placement: .topBarLeading) {
+                Button {
+                    self.presentationMode.wrappedValue.dismiss()
+                } label: {
+                    Image(systemName: "chevron.left")
+                        .foregroundStyle(Color.baseGreen)
+                }
+            }
+            
+            ToolbarItem(placement: .topBarTrailing) {
+                Button {
+                    viewModel.postPrice()
+                    self.presentationMode.wrappedValue.dismiss()
+                } label: {
+                    RoundedRectangle(cornerRadius: 30)
+                        .frame(width: 50, height: 30)
+                        .foregroundStyle(Color.baseGreen)
+                        .overlay {
+                            Text("게시")
+                                .font(.system(size: 15, weight: .bold))
+                                .foregroundStyle(.white)
+                        }
+                }
+            }
+        }
+    }
+}
+
+#Preview {
+    NavigationView {
+        MarketPostingView()
     }
 }

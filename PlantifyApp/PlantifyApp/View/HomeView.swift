@@ -8,12 +8,14 @@
 import SwiftUI
 
 struct HomeView: View {
+    @StateObject var profileViewModel = ProfileViewModel()
+    @StateObject var homeViewModel = HomeViewModel()
     
     var body: some View {
         ZStack {
             VStack {
                 HStack {
-                    Text("호날두")
+                    Text(profileViewModel.model.data.name)
                         .foregroundStyle(Color.baseGreen)
                     
                     Text("님 반가워요!")
@@ -30,14 +32,20 @@ struct HomeView: View {
                 .padding(.horizontal, 20)
                 
                 ScrollView {
-                    
-                    ForEach(0..<10) { index in
-                        PostCell(name: "호날두", image: "https://static.wixstatic.com/media/53e8bb_a1e88e551162485eb4ff962437300872~mv2.jpeg/v1/crop/x_0,y_105,w_1024,h_919/fill/w_560,h_560,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Banana.jpeg", title: "Siu", content: "siuuuuuuuuuu")
+                    ForEach(0..<homeViewModel.model.data.count, id: \.self) { index in
+                        PostCell(viewModel: self.homeViewModel, index: index)
                     }
+                    
+                    Spacer()
+                        .frame(height: 50)
                 }
             }
             
             CustomTabBar()
+        }
+        .onAppear {
+            profileViewModel.getProfile()
+            homeViewModel.getPost()
         }
     }
 }

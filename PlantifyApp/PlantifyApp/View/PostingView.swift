@@ -10,15 +10,18 @@ import SwiftUI
 struct PostingView: View {
     @Environment(\.presentationMode) var presentationMode
     
+    @StateObject var viewModel = PostingViewModel()
+    
     @FocusState var isTitle: Bool
     @FocusState var isContent: Bool
     
     var body: some View {
         VStack(spacing: 50) {
             ImagePickerBox(width: 300, height: 200)
+                .environmentObject(viewModel)
             
-            InputField(content: .constant(""), prompt: "제목을 입력해주세요.", focus: _isTitle)
-            InputField(content: .constant(""), prompt: "내용을 입력해주세요.", focus: _isContent)
+            InputField(content: $viewModel.model.title, prompt: "제목을 입력해주세요.", focus: _isTitle)
+            InputField(content: $viewModel.model.description, prompt: "내용을 입력해주세요.", focus: _isContent)
             
             Spacer()
         }
@@ -35,7 +38,8 @@ struct PostingView: View {
             
             ToolbarItem(placement: .topBarTrailing) {
                 Button {
-                    
+                    viewModel.post()
+                    self.presentationMode.wrappedValue.dismiss()
                 } label: {
                     RoundedRectangle(cornerRadius: 30)
                         .frame(width: 50, height: 30)

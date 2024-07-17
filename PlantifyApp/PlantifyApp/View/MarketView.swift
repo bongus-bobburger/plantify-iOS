@@ -12,10 +12,12 @@ struct MarketView: View {
     
     @State var text: String = ""
     
+    @StateObject var viewModel = PriceViewModel()
+    
     var body: some View {
         ScrollView {
-            ForEach(0..<10) { index in
-                ProductCell(image: "https://static.wixstatic.com/media/53e8bb_a1e88e551162485eb4ff962437300872~mv2.jpeg/v1/crop/x_0,y_105,w_1024,h_919/fill/w_560,h_560,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Banana.jpeg", title: "바나나", name: "호날두", price: "10000")
+            ForEach(0..<viewModel.priceResponse.data.count, id: \.self) { index in
+                ProductCell(image: viewModel.priceResponse.data[index].imageUrl, title: viewModel.priceResponse.data[index].name, name: "이승혁", price: viewModel.priceResponse.data[index].price, description: viewModel.priceResponse.data[index].description)
             }
         }
         .tint(Color.baseGreen)
@@ -31,8 +33,18 @@ struct MarketView: View {
                         .foregroundStyle(Color.baseGreen)
                 }
             }
+            
+            ToolbarItem(placement: .topBarTrailing) {
+                NavigationLink(destination: MarketPostingView()) {
+                    Image(systemName: "plus")
+                        .foregroundStyle(Color.baseGreen)
+                }
+            }
         }
         .navigationBarBackButtonHidden()
+        .onAppear {
+            viewModel.getPrice()
+        }
     }
 }
 

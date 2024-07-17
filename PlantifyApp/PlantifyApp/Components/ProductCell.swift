@@ -12,9 +12,10 @@ struct ProductCell: View {
     let title: String
     let name: String
     let price: String
+    let description: String
     
     var body: some View {
-        NavigationLink(destination: MarketDetailView(image: "https://static.wixstatic.com/media/53e8bb_a1e88e551162485eb4ff962437300872~mv2.jpeg/v1/crop/x_0,y_105,w_1024,h_919/fill/w_560,h_560,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Banana.jpeg", price: "1000", title: "바나나", content: "바나나나나")) {
+        NavigationLink(destination: MarketDetailView(image: image, price: price, title: title, content: description)) {
             VStack {
                 Divider()
                 
@@ -66,6 +67,6 @@ struct ProductCell: View {
 
 #Preview {
     NavigationView {
-        ProductCell(image: "https://static.wixstatic.com/media/53e8bb_a1e88e551162485eb4ff962437300872~mv2.jpeg/v1/crop/x_0,y_105,w_1024,h_919/fill/w_560,h_560,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Banana.jpeg", title: "바나나", name: "호날두", price: "10000")
+        ProductCell(image: "https://static.wixstatic.com/media/53e8bb_a1e88e551162485eb4ff962437300872~mv2.jpeg/v1/crop/x_0,y_105,w_1024,h_919/fill/w_560,h_560,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Banana.jpeg", title: "바나나", name: "호날두", price: "10000", description: "ccccc")
     }
 }

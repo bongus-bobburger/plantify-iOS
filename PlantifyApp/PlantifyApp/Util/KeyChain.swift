@@ -10,8 +10,8 @@ import Security
 
 class KeyChain {
     
-    private static let key = "QvickTokenService"
-    private static let service = Bundle.main.bundleIdentifier ?? "kr.hs.dgsw.Qvick"
+    private static let key = "PlantifyTokenService"
+    private static let service = Bundle.main.bundleIdentifier ?? "SeoungHyukLee.PlantifyApp"
     
     static func create(token: TokenModel) -> Bool {
         guard let data = try? JSONEncoder().encode(token) else {

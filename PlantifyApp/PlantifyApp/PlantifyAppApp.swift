@@ -12,7 +12,16 @@ struct PlantifyAppApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationView {
-                SignInView()
+                Group {
+                    if KeyChain.read() == nil {
+                        SignInView()
+                    }
+                    else {
+                        HomeView()
+                    }
+                }
+                .navigationBarHidden(true)
+                    
             }
         }
     }

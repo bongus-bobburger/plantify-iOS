@@ -10,6 +10,9 @@ import SwiftUI
 struct ProfileView: View {
     @Environment(\.presentationMode) var presentationMode
     
+    @StateObject var viewModel = ProfileViewModel()
+    @StateObject var priceViewModel = PriceViewModel()
+    
     var body: some View {
         ZStack {
             VStack {
@@ -34,14 +37,14 @@ struct ProfileView: View {
                     
                     VStack(alignment: .leading) {
                         HStack {
-                            Text("호날두")
+                            Text(viewModel.model.data.name)
                                 .foregroundStyle(Color.baseGreen)
                             
                             Text("님 반가워요!")
                         }
                         .font(.system(size: 25, weight: .black))
                         
-                        Text("ronaldo")
+                        Text(viewModel.model.data.email)
                             .foregroundStyle(.gray)
                     }
                     .padding(.horizontal)
@@ -61,8 +64,8 @@ struct ProfileView: View {
                         Spacer()
                             .frame(width: 30)
                         
-                        ForEach(0..<10) { index in
-                            MyPlantCell(image: "https://static.wixstatic.com/media/53e8bb_a1e88e551162485eb4ff962437300872~mv2.jpeg/v1/crop/x_0,y_105,w_1024,h_919/fill/w_560,h_560,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Banana.jpeg", name: " 바나나")
+                        ForEach(0..<priceViewModel.priceResponse.data.count, id: \.self) { index in
+                            MyPlantCell(image: priceViewModel.priceResponse.data[index].imageUrl, name: priceViewModel.priceResponse.data[index].name)
                         }
                     }
                 }
@@ -80,6 +83,19 @@ struct ProfileView: View {
                         .foregroundStyle(Color.baseGreen)
                 }
             }
+            
+            ToolbarItem(placement: .topBarTrailing) {
+                Button {
+                    if KeyChain.delete() {exit()}
+                } label: {
+                    Text("로그아웃")
+                        .foregroundStyle(.red)
+                }
+            }
+        }
+        .onAppear {
+            viewModel.getProfile()
+            priceViewModel.getPrice()
         }
     }
 }

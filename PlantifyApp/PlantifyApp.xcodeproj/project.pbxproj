@@ -45,6 +45,24 @@
 		425F6F502C47AF91005D7A2F /* KeyChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425F6F4F2C47AF91005D7A2F /* KeyChain.swift */; };
 		425F6F522C47AFA6005D7A2F /* TokenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425F6F512C47AFA6005D7A2F /* TokenModel.swift */; };
 		425F6F562C47B19A005D7A2F /* StatusModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425F6F552C47B19A005D7A2F /* StatusModel.swift */; };
+		425F6F582C47DD57005D7A2F /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425F6F572C47DD57005D7A2F /* ProfileModel.swift */; };
+		425F6F5A2C47DD76005D7A2F /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425F6F592C47DD76005D7A2F /* ProfileViewModel.swift */; };
+		425F6F5C2C47ED36005D7A2F /* ImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425F6F5B2C47ED36005D7A2F /* ImageViewModel.swift */; };
+		425F6F602C47FBA1005D7A2F /* PostingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425F6F5F2C47FBA1005D7A2F /* PostingModel.swift */; };
+		425F6F622C47FBC7005D7A2F /* PostingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425F6F612C47FBC7005D7A2F /* PostingViewModel.swift */; };
+		425F6F642C480647005D7A2F /* UploadResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425F6F632C480647005D7A2F /* UploadResponse.swift */; };
+		425F6F662C480E1A005D7A2F /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425F6F652C480E1A005D7A2F /* HomeModel.swift */; };
+		425F6F682C480E79005D7A2F /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425F6F672C480E79005D7A2F /* HomeViewModel.swift */; };
+		425F6F6A2C4835A4005D7A2F /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425F6F692C4835A4005D7A2F /* ImageModel.swift */; };
+		425F6F6C2C483A6B005D7A2F /* AiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425F6F6B2C483A6B005D7A2F /* AiResponse.swift */; };
+		425F6F6E2C48412E005D7A2F /* DictViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425F6F6D2C48412E005D7A2F /* DictViewModel.swift */; };
+		425F6F702C48426E005D7A2F /* DictResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425F6F6F2C48426E005D7A2F /* DictResponse.swift */; };
+		425F6F722C484691005D7A2F /* PriceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425F6F712C484691005D7A2F /* PriceModel.swift */; };
+		425F6F742C484707005D7A2F /* PriceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425F6F732C484707005D7A2F /* PriceViewModel.swift */; };
+		425F6F762C484805005D7A2F /* MarketPostingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425F6F752C484805005D7A2F /* MarketPostingView.swift */; };
+		425F6F782C484A5B005D7A2F /* PriceImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425F6F772C484A5B005D7A2F /* PriceImageModel.swift */; };
+		425F6F7A2C485A4D005D7A2F /* Exit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425F6F792C485A4D005D7A2F /* Exit.swift */; };
+		425F6F7C2C485C0F005D7A2F /* PriceResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425F6F7B2C485C0F005D7A2F /* PriceResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -87,6 +105,24 @@
 		425F6F4F2C47AF91005D7A2F /* KeyChain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChain.swift; sourceTree = "<group>"; };
 		425F6F512C47AFA6005D7A2F /* TokenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenModel.swift; sourceTree = "<group>"; };
 		425F6F552C47B19A005D7A2F /* StatusModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusModel.swift; sourceTree = "<group>"; };
+		425F6F572C47DD57005D7A2F /* ProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
+		425F6F592C47DD76005D7A2F /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		425F6F5B2C47ED36005D7A2F /* ImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewModel.swift; sourceTree = "<group>"; };
+		425F6F5F2C47FBA1005D7A2F /* PostingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostingModel.swift; sourceTree = "<group>"; };
+		425F6F612C47FBC7005D7A2F /* PostingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostingViewModel.swift; sourceTree = "<group>"; };
+		425F6F632C480647005D7A2F /* UploadResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadResponse.swift; sourceTree = "<group>"; };
+		425F6F652C480E1A005D7A2F /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		425F6F672C480E79005D7A2F /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		425F6F692C4835A4005D7A2F /* ImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
+		425F6F6B2C483A6B005D7A2F /* AiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AiResponse.swift; sourceTree = "<group>"; };
+		425F6F6D2C48412E005D7A2F /* DictViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictViewModel.swift; sourceTree = "<group>"; };
+		425F6F6F2C48426E005D7A2F /* DictResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictResponse.swift; sourceTree = "<group>"; };
+		425F6F712C484691005D7A2F /* PriceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceModel.swift; sourceTree = "<group>"; };
+		425F6F732C484707005D7A2F /* PriceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceViewModel.swift; sourceTree = "<group>"; };
+		425F6F752C484805005D7A2F /* MarketPostingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketPostingView.swift; sourceTree = "<group>"; };
+		425F6F772C484A5B005D7A2F /* PriceImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceImageModel.swift; sourceTree = "<group>"; };
+		425F6F792C485A4D005D7A2F /* Exit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exit.swift; sourceTree = "<group>"; };
+		425F6F7B2C485C0F005D7A2F /* PriceResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +187,16 @@
 				425F6F552C47B19A005D7A2F /* StatusModel.swift */,
 				425F6F112C468B26005D7A2F /* SignInModel.swift */,
 				425F6F152C468E33005D7A2F /* SignUpModel.swift */,
+				425F6F572C47DD57005D7A2F /* ProfileModel.swift */,
+				425F6F5F2C47FBA1005D7A2F /* PostingModel.swift */,
+				425F6F632C480647005D7A2F /* UploadResponse.swift */,
+				425F6F652C480E1A005D7A2F /* HomeModel.swift */,
+				425F6F692C4835A4005D7A2F /* ImageModel.swift */,
+				425F6F6B2C483A6B005D7A2F /* AiResponse.swift */,
+				425F6F6F2C48426E005D7A2F /* DictResponse.swift */,
+				425F6F712C484691005D7A2F /* PriceModel.swift */,
+				425F6F772C484A5B005D7A2F /* PriceImageModel.swift */,
+				425F6F7B2C485C0F005D7A2F /* PriceResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -161,6 +207,12 @@
 				425F6F052C4687D3005D7A2F /* ExampleViewModel.swift */,
 				425F6F132C468B41005D7A2F /* SignInViewModel.swift */,
 				425F6F172C468E52005D7A2F /* SignUpViewModel.swift */,
+				425F6F592C47DD76005D7A2F /* ProfileViewModel.swift */,
+				425F6F5B2C47ED36005D7A2F /* ImageViewModel.swift */,
+				425F6F612C47FBC7005D7A2F /* PostingViewModel.swift */,
+				425F6F672C480E79005D7A2F /* HomeViewModel.swift */,
+				425F6F6D2C48412E005D7A2F /* DictViewModel.swift */,
+				425F6F732C484707005D7A2F /* PriceViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -176,6 +228,7 @@
 				425F6F1F2C469183005D7A2F /* DictView.swift */,
 				425F6F212C46918A005D7A2F /* ProfileView.swift */,
 				425F6F252C4691A0005D7A2F /* MarketView.swift */,
+				425F6F752C484805005D7A2F /* MarketPostingView.swift */,
 				425F6F3E2C478C10005D7A2F /* MarketDetailView.swift */,
 				425F6F402C479022005D7A2F /* PurchaseView.swift */,
 				425F6F2B2C474F9F005D7A2F /* CommentsView.swift */,
@@ -214,6 +267,7 @@
 			children = (
 				425F6F322C475DEE005D7A2F /* ImagePicker.swift */,
 				425F6F4F2C47AF91005D7A2F /* KeyChain.swift */,
+				425F6F792C485A4D005D7A2F /* Exit.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -303,10 +357,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				425F6F7C2C485C0F005D7A2F /* PriceResponse.swift in Sources */,
 				425F6F0D2C46893F005D7A2F /* SignInView.swift in Sources */,
+				425F6F7A2C485A4D005D7A2F /* Exit.swift in Sources */,
 				425F6F522C47AFA6005D7A2F /* TokenModel.swift in Sources */,
+				425F6F722C484691005D7A2F /* PriceModel.swift in Sources */,
+				425F6F6E2C48412E005D7A2F /* DictViewModel.swift in Sources */,
 				425F6F2C2C474F9F005D7A2F /* CommentsView.swift in Sources */,
 				425F6EF72C46879C005D7A2F /* ContentView.swift in Sources */,
+				425F6F6C2C483A6B005D7A2F /* AiResponse.swift in Sources */,
+				425F6F762C484805005D7A2F /* MarketPostingView.swift in Sources */,
 				425F6F3B2C47740B005D7A2F /* CustomTabBar.swift in Sources */,
 				425F6F562C47B19A005D7A2F /* StatusModel.swift in Sources */,
 				425F6F3D2C478989005D7A2F /* ProductCell.swift in Sources */,
@@ -318,11 +378,15 @@
 				425F6F222C46918A005D7A2F /* ProfileView.swift in Sources */,
 				425F6F282C46922E005D7A2F /* HomeView.swift in Sources */,
 				425F6F4D2C47A751005D7A2F /* BundleExt.swift in Sources */,
+				425F6F582C47DD57005D7A2F /* ProfileModel.swift in Sources */,
 				425F6F372C47653E005D7A2F /* MyPlantCell.swift in Sources */,
+				425F6F782C484A5B005D7A2F /* PriceImageModel.swift in Sources */,
 				425F6F202C469183005D7A2F /* DictView.swift in Sources */,
 				425F6F122C468B26005D7A2F /* SignInModel.swift in Sources */,
+				425F6F622C47FBC7005D7A2F /* PostingViewModel.swift in Sources */,
 				425F6F332C475DEE005D7A2F /* ImagePicker.swift in Sources */,
 				425F6F2A2C474A5B005D7A2F /* PostCell.swift in Sources */,
+				425F6F6A2C4835A4005D7A2F /* ImageModel.swift in Sources */,
 				425F6F162C468E33005D7A2F /* SignUpModel.swift in Sources */,
 				425F6F412C479022005D7A2F /* PurchaseView.swift in Sources */,
 				425F6F432C4792E5005D7A2F /* PurchaseOption.swift in Sources */,
@@ -330,12 +394,20 @@
 				425F6F302C475DC4005D7A2F /* PostingView.swift in Sources */,
 				425F6F3F2C478C10005D7A2F /* MarketDetailView.swift in Sources */,
 				425F6F392C4773CC005D7A2F /* CustomTabButton.swift in Sources */,
+				425F6F5C2C47ED36005D7A2F /* ImageViewModel.swift in Sources */,
 				425F6F352C475F03005D7A2F /* ImagePickerBox.swift in Sources */,
 				425F6F082C4687DA005D7A2F /* ExampleModel.swift in Sources */,
+				425F6F5A2C47DD76005D7A2F /* ProfileViewModel.swift in Sources */,
 				425F6F182C468E52005D7A2F /* SignUpViewModel.swift in Sources */,
 				425F6F1E2C469176005D7A2F /* ImageView.swift in Sources */,
+				425F6F642C480647005D7A2F /* UploadResponse.swift in Sources */,
 				425F6EF52C46879C005D7A2F /* PlantifyAppApp.swift in Sources */,
+				425F6F682C480E79005D7A2F /* HomeViewModel.swift in Sources */,
 				425F6F262C4691A0005D7A2F /* MarketView.swift in Sources */,
+				425F6F602C47FBA1005D7A2F /* PostingModel.swift in Sources */,
+				425F6F662C480E1A005D7A2F /* HomeModel.swift in Sources */,
+				425F6F702C48426E005D7A2F /* DictResponse.swift in Sources */,
+				425F6F742C484707005D7A2F /* PriceViewModel.swift in Sources */,
 				425F6F2E2C4754F6005D7A2F /* CommentCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
